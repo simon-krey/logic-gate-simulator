@@ -19,9 +19,10 @@ class App:
 
         self.running = True
 
-        test_label = Label(300, 300, "Netanjahu")
+        test_label = Label((300, 300), (0, 0), "Netanjahu")
 
-        screen = pygame.display.set_mode((1000, 1000))
+        display = pygame.display.set_mode((1000, 1000))
+        screen = pygame.Surface((1000, 1000))
 
         while self.running:
             for event in pygame.event.get():

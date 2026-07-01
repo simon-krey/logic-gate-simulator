@@ -21,10 +21,10 @@ class Simulation:
         def get_active(in_index: int):
             if in_index < 0:
                 in_index = in_index * -1 - 1
-                return self.start_nodes[in_index["out_active"]]
+                return self.start_nodes[in_index]["out_active"]
 
             else:
-                return self.logic_nodes[in_index["out_active"]]
+                return self.logic_nodes[in_index]["out_active"]
             
         def get_gate_fn(gate_str: str):
             return gates[gate_str]
