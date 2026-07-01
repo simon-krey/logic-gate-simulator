@@ -17,6 +17,8 @@ class App:
         pygame.init()
         pygame.font.init()
 
+        clock = pygame.Clock()
+
         self.running = True
 
         test_label = Label((300, 300), (0, 0), "Netanjahu")
@@ -33,4 +35,7 @@ class App:
 
             test_label.render(screen)
 
+            display.blit(screen)
+
             pygame.display.flip()
+            clock.tick(60)
