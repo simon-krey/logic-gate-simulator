@@ -6,4 +6,3 @@ class Simulation:
             # {"type" : "and", "layer" : 0, "inputs": [1, 2], "outputs": [3], "out_active": False}
         ]
 
-    
