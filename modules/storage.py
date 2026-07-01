@@ -17,4 +17,3 @@ def load_from_file(path: str, simulation: Simulation):
         simulation.start_nodes = obj["start_nodes"]
         simulation.logic_nodes = obj["logic_nodes"]
         simulation.output_nodes = obj["output_nodes"]
-
